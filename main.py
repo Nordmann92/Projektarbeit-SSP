@@ -17,3 +17,8 @@ class Character:
 def welcome():
     print('Willkommen zu unserem Spiel "Schere, Stein, Papier"')
 
+
+if __name__ == '__main__':
+    p1 = Character('Test')
+    print(p1.name)
+    print(p1.score)
