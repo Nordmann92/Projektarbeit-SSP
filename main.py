@@ -14,6 +14,11 @@ class Character:
     def show_move(self):
         return self.move
 
+
+    def show_attributes(self):
+        return self.name, self.score, self.win, self.lose, self.move
+
+
 def welcome():
     print('Willkommen zu unserem Spiel "Schere, Stein, Papier"')
 
@@ -38,4 +43,7 @@ def player_chose_move():
 
 
 if __name__ == '__main__':
-    print(player_chose_move())
+    welcome()
+    p1 = Character(player_chose_name())
+    p1.move = player_chose_move()
+    print(p1.show_attributes())
