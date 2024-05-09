@@ -48,3 +48,15 @@ Methoden
 - Text ausgeben die den Spieler auffordert seinen "move" anzugeben (schere, stein, papier)
 - Objekt des spieler anpassen in der move zugewiesen wird
 
+
+# Next ToDos
+
+## NPC erstellen
+
+-- Name vergeben
+-- zufälliger move
+
+## Funktion für Spiel gegen NPC
+
+- return winner
+- return loser
