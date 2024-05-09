@@ -1,7 +1,7 @@
 # main File
 
 class Character:
-    def __init__(self, name, score, win, lose, move):
+    def __init__(self, name, score=0, win=0, lose=0, move=0):
         self.name = name
         self.score = score
         self.win = win
