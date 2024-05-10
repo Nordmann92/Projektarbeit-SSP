@@ -49,6 +49,26 @@ Methoden
 - Objekt des spieler anpassen in der move zugewiesen wird
 
 
+
+
+
+
+def play(p1.move, p2.move)
+    bestimmen des gewinners
+
+return gewinner, verlierer
+
+
+
+
+
+
+
+
+
+
+
+
 # Next ToDos
 
 ## NPC erstellen

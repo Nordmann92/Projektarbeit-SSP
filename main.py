@@ -19,6 +19,8 @@ class Character:
         return self.name, self.score, self.win, self.lose, self.move
 
 
+p1.move = p1.chose_move
+
 def welcome():
     print('Willkommen zu unserem Spiel "Schere, Stein, Papier"')
 
