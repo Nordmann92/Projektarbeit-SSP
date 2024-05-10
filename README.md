@@ -48,3 +48,4 @@ Methoden
 - Text ausgeben die den Spieler auffordert seinen "move" anzugeben (schere, stein, papier)
 - Objekt des spieler anpassen in der move zugewiesen wird
 
+### Funktion zufälliger Move für zum Beispiel NPC   
