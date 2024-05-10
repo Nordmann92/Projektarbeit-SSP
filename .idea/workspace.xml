@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0cecf83-6a51-4cdb-bfef-9537ba81b72c" name="Changes" comment="game loop, show attribute">
+    <list default="true" id="a0cecf83-6a51-4cdb-bfef-9537ba81b72c" name="Changes" comment="Runde 1 AP abgearbeitet!">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +113,7 @@
       <workItem from="1715267146495" duration="7080000" />
       <workItem from="1715326025209" duration="163000" />
       <workItem from="1715341537389" duration="5235000" />
-      <workItem from="1715346794174" duration="725000" />
+      <workItem from="1715346794174" duration="1450000" />
     </task>
     <task id="LOCAL-00001" summary="jaja">
       <option name="closed" value="true" />
@@ -196,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715345786187</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Runde 1 AP abgearbeitet!">
+      <option name="closed" value="true" />
+      <created>1715347810050</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715347810050</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,11 +227,12 @@
     <MESSAGE value="class create&#10;testing" />
     <MESSAGE value="player chose name and move" />
     <MESSAGE value="game loop, show attribute" />
-    <option name="LAST_COMMIT_MESSAGE" value="game loop, show attribute" />
+    <MESSAGE value="Runde 1 AP abgearbeitet!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Runde 1 AP abgearbeitet!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projektarbeit_SSP$Elisa.coverage" NAME="Elisa Coverage Results" MODIFIED="1715345269154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Projektarbeit_SSP$Marilena.coverage" NAME="Marilena Coverage Results" MODIFIED="1715344104397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projektarbeit_SSP$main.coverage" NAME="main Coverage Results" MODIFIED="1715347495204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projektarbeit_SSP$main.coverage" NAME="main Coverage Results" MODIFIED="1715347744696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

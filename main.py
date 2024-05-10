@@ -3,6 +3,7 @@ import random
 # random.seed(1)
 class Character:
     def __init__(self, name, score=0, win=0, lose=0, move=0):
+
         self.name = name
         self.score = score
         self.win = win
@@ -49,6 +50,3 @@ if __name__ == "__main__":
     p2 = Character("NPC")
     p2.choose_random_move()
     p2.show_attributes()
-
-
-

@@ -19,7 +19,7 @@ wir bauen ein einfaches Schere Stein Papier Spiel in Python
 
 
 
-### Klasse character
+### AP1) Klasse character **DONE**
 
 Attribute:
 
@@ -35,17 +35,26 @@ Methoden
 
 
 
-### Funktion für den Spielernamen
-
-(def select_player():)
+### AP2) Funktion für den Spielernamen als Klassenmethode **DONE**
 
 - Text ausgeben die den Spieler auffordert seinen Namen anzugeben
-- Objekt erstellen mit Name des Spielers
-- objekt zurück geben
+- Objektname vergeben mit Name des Spielers
 
-### Funktion für den Spieler-move
+
+### AP3) Funktion für Auswahl des Spielzuges **DONE**
 
 - Text ausgeben die den Spieler auffordert seinen "move" anzugeben (schere, stein, papier)
-- Objekt des spieler anpassen in der move zugewiesen wird
+- entsprechendes Objektattribut des spielers anpassen
 
-### Funktion zufälliger Move für zum Beispiel NPC   
+
+### AP4) Funktion zufälliger Move für zum Beispiel NPC **DONE**  
+
+- Funktion schreiben die einen zufälligen Spielzug auswählt und das entsprechende Objektattribut anpasst (.move)
+
+
+### Funktion zum wählen des Gewinners und Verlierers **In Progress**
+
+- return Gewinner
+- für den Gewinner score +1 und win +1
+- für den Verlierer score -1 und lose +1
+
