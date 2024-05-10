@@ -1,0 +1,43 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Projektarbeit-SSP\r\nwir bauen ein einfaches Schere Stein Papier Spiel in Python\r\n\r\n## Anforderungen\r\n\r\n\r\n- spielen gegen Computer\r\n- Namen des Spielers wählbar\r\n- es soll der Punktestand gespeichert werden\r\n\r\n## Programmablauf\r\n\r\n- Begrüßung\r\n- Name wählen\r\n- Spielzug festlegen? Schere oder Stein oder Papier\r\n- Vergleichen mit Computer \r\n- Gewinner ausgeben\r\n\r\n\r\n\r\n\r\n### Klasse character\r\n\r\nAttribute:\r\n\r\n- Name\r\n- Punktestand = 0\r\n- Niederlagen = 0\r\n- Siege = 0\r\n- Spielzug (schere, stein, papier) = 0\r\n\r\nMethoden\r\n- gib den Punktestand zurück\r\n- gib den Spielzug zurück\r\n\r\n\r\n\r\n### Funktion für den Spielernamen\r\n\r\n(def select_player():)\r\n\r\n- Text ausgeben die den Spieler auffordert seinen Namen anzugeben\r\n- Objekt erstellen mit Name des Spielers\r\n- objekt zurück geben\r\n\r\n### Funktion für den Spieler-move\r\n\r\n- Text ausgeben die den Spieler auffordert seinen \"move\" anzugeben (schere, stein, papier)\r\n- Objekt des spieler anpassen in der move zugewiesen wird\r\n\r\n\r\n\r\n\r\n\r\n\r\ndef play(p1.move, p2.move)\r\n    bestimmen des gewinners\r\n\r\nreturn gewinner, verlierer\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n# Next ToDos\r\n\r\n## NPC erstellen\r\n\r\n-- Name vergeben\r\n-- zufälliger move\r\n\r\n## Funktion für Spiel gegen NPC\r\n\r\n- return winner\r\n- return loser
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	
++++ b/README.md	
+@@ -50,25 +50,6 @@
+ 
+ 
+ 
+-
+-
+-
+-def play(p1.move, p2.move)
+-    bestimmen des gewinners
+-
+-return gewinner, verlierer
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+ # Next ToDos
+ 
+ ## NPC erstellen
+@@ -79,4 +60,4 @@
+ ## Funktion für Spiel gegen NPC
+ 
+ - return winner
+-- return loser
+\ No newline at end of file
++- return loser
