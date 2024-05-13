@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0cecf83-6a51-4cdb-bfef-9537ba81b72c" name="Changes" comment="Runde 1 AP abgearbeitet!">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="a0cecf83-6a51-4cdb-bfef-9537ba81b72c" name="Changes" comment="Use Case Vorlage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Norman" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,22 +52,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Elisa.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Marilena.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Elisa.executor": "Run",
+    "Python.Marilena.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Runde2",
+    "last_opened_file_path": "C:/Users/nordm/PycharmProjects/Projektarbeit-SSP",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nordm\PycharmProjects\Projektarbeit-SSP" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Projektarbeit-SSP" />
@@ -114,6 +120,8 @@
       <workItem from="1715326025209" duration="163000" />
       <workItem from="1715341537389" duration="5235000" />
       <workItem from="1715346794174" duration="1450000" />
+      <workItem from="1715549994735" duration="1921000" />
+      <workItem from="1715585175538" duration="1090000" />
     </task>
     <task id="LOCAL-00001" summary="jaja">
       <option name="closed" value="true" />
@@ -203,7 +211,39 @@
       <option name="project" value="LOCAL" />
       <updated>1715347810050</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Runde 1 AP abgearbeitet!">
+      <option name="closed" value="true" />
+      <created>1715350249439</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715350249439</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Runde 2 Branch!">
+      <option name="closed" value="true" />
+      <created>1715350365014</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715350365014</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Choose winner!">
+      <option name="closed" value="true" />
+      <created>1715551812837</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715551812837</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Use Case Vorlage">
+      <option name="closed" value="true" />
+      <created>1715585464223</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715585464223</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,11 +268,14 @@
     <MESSAGE value="player chose name and move" />
     <MESSAGE value="game loop, show attribute" />
     <MESSAGE value="Runde 1 AP abgearbeitet!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Runde 1 AP abgearbeitet!" />
+    <MESSAGE value="Runde 2 Branch!" />
+    <MESSAGE value="Choose winner!" />
+    <MESSAGE value="Use Case Vorlage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use Case Vorlage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projektarbeit_SSP$Elisa.coverage" NAME="Elisa Coverage Results" MODIFIED="1715345269154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Projektarbeit_SSP$Marilena.coverage" NAME="Marilena Coverage Results" MODIFIED="1715344104397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projektarbeit_SSP$main.coverage" NAME="main Coverage Results" MODIFIED="1715347744696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projektarbeit_SSP$main.coverage" NAME="main Coverage Results" MODIFIED="1715551699553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

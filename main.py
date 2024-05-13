@@ -41,12 +41,55 @@ class Character:
         self.name = player1.capitalize()
 
 
+def choose_winner(player_a, player_b) -> object:
+
+    if player_a.move == player_b.move:
+        return "Unentschieden"
+    elif ((player_a.move == "rock" and player_b.move == "scissor") or
+            (player_a.move == "paper" and player_b.move == "rock") or
+            (player_a.move == "scissor" and player_b.move == "paper")):
+        player_a.score += 1
+        player_a.win += 1
+        player_b.score -= 1
+        player_b.lose += 1
+        return player_a.name
+    elif ((player_a.move == "rock" and player_b.move == "paper") or
+            (player_a.move == "paper" and player_b.move == "scissor") or
+            (player_a.move == "scissor" and player_b.move == "rock")):
+        player_a.score -= 1
+        player_a.lose += 1
+        player_b.score += 1
+        player_b.win += 1
+        return player_b.name
+    else:
+        return "fehler"
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     print('"Willkommen zu unserem Spiel "Schere, Stein, Papier"')
     p1 = Character("")
-    p1.choose_name()
-    p1.choose_move()
-    p1.show_attributes()
     p2 = Character("NPC")
-    p2.choose_random_move()
+    p1.choose_name()
+
+    while True:
+        p2.choose_random_move()
+        p1.choose_move()
+        print("Spielzüge: ", p1.name, p1.move, p2.name, p2.move)
+        print("der Gewinner ist:", choose_winner(p1, p2))
+        a = input("nochmal? (ja / nein)")
+        if a == "ja":
+            pass
+        else:
+            break
+
+    p1.show_attributes()
     p2.show_attributes()
