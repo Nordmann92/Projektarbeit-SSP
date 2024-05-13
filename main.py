@@ -50,3 +50,4 @@ if __name__ == "__main__":
     p2 = Character("NPC")
     p2.choose_random_move()
     p2.show_attributes()
+

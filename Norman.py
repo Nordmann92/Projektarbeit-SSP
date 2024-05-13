@@ -21,4 +21,3 @@ def choose_winner(player_a, player_b) -> object:
     else:
         return "fehler"
 
-
