@@ -66,14 +66,6 @@ def choose_winner(player_a, player_b) -> object:
 
 
 
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
     print('"Willkommen zu unserem Spiel "Schere, Stein, Papier"')
     p1 = Character("")
