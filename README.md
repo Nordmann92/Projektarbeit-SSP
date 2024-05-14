@@ -52,7 +52,7 @@ Methoden
 - Funktion schreiben die einen zufälligen Spielzug auswählt und das entsprechende Objektattribut anpasst (.move)
 
 
-### AP5(**In Progress**)Funktion zum wählen des Gewinners und Verlierers
+### AP5(**DONE**)Funktion zum wählen des Gewinners und Verlierers
 
 - return Gewinner
 - für den Gewinner score +1 und win +1
