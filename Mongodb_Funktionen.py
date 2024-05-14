@@ -9,32 +9,31 @@ client = MongoClient(uriN)
 db = client["SSP"]
 
 # 2
-collection = db['Users']
+collection = db['played_games']
 
 # 3
-collection.insert_one({"Name": "Max", "Alter": 20, "Studiengang": "Informatik"})
+# collection.insert_one({"Name": "Max", "Alter": 20, "Studiengang": "Informatik"})
 
 
-"""
 # 4
 # collection.update_one({"Name": "Max"},{"$set":{"Alter": 21}})
 
 # 5
-collection.insert_one({"Name": "Bob", "Alter": 24, "Studiengang": "Wirtschaft"})
-collection.insert_one({"Name": "Jon", "Alter": 19, "Studiengang": "Bauwesen"})
-collection.insert_one({"Name": "Anna", "Alter": 23, "Studiengang": "Jura"})
+# collection.insert_one({"Name": "Bob", "Alter": 24, "Studiengang": "Wirtschaft"})
+# collection.insert_one({"Name": "Jon", "Alter": 19, "Studiengang": "Bauwesen"})
+# collection.insert_one({"Name": "Anna", "Alter": 23, "Studiengang": "Jura"})
 
 # 6
 
-suche = collection.find_one({"Name": "Max"}, {"_id": 0})
-print(suche)
+# suche = collection.find_one({"Name": "Elisa"}, {"_id": 0})
+# print(suche)
 
 # 7
 
-alle = collection.find({}, {"_id": 0})
+alle = collection.find({"player_1": "Elisa"}, {"_id": 0})
 for doc in alle:
     print(doc)
-
+"""
 # 8
 
 # collection.delete_one({'Name': 'Max'})

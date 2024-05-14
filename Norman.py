@@ -1,6 +1,18 @@
 # main File
 import random
+from pymongo.mongo_client import MongoClient
 # random.seed(1)
+import datetime
+
+
+uriN = "mongodb+srv://Norman:t2wGUYrYIvyMu077@norman1.tnxqh8h.mongodb.net/?retryWrites=true&w=majority&appName=Norman1"
+
+client = MongoClient(uriN)
+db = client["SSP"]
+col_users = db['Users']
+col_played_games = db["played_games"]
+
+
 class Character:
     def __init__(self, name, score=0, win=0, lose=0, move=0):
 
@@ -67,21 +79,54 @@ def choose_winner(player_a, player_b) -> object:
 
 
 if __name__ == "__main__":
-    print('"Willkommen zu unserem Spiel "Schere, Stein, Papier"')
+
+    print('Willkommen zu unserem Spiel "Schere, Stein, Papier"\n')
     p1 = Character("")
     p2 = Character("NPC")
     p1.choose_name()
+    print()
+
+    searched_user = col_users.find_one({"name": p1.name}, {"_id": 0})
+
+    if searched_user == None:
+        col_users.insert_one(p1.__dict__)
+    else:
+        p1.score = searched_user["score"]
+        p1.win = searched_user["win"]
+        p1.lose = searched_user["lose"]
+        print(f"der Spieler {p1.name} existiert bereits! folgende Spielstände werden übernommen:")
+        print(f"Punktestand: {p1.score}\ngewonnene Spiele: {p1.win}\nverlorene Spiele: {p1.lose}")
 
     while True:
         p2.choose_random_move()
         p1.choose_move()
-        print("Spielzüge: ", p1.name, p1.move, p2.name, p2.move)
-        print("der Gewinner ist:", choose_winner(p1, p2))
-        a = input("nochmal? (ja / nein)")
-        if a == "ja":
+        print()
+        print(f"folgende Spielzüge wurden gewählt:\n{p1.name} : {p1.move}\n{p2.name} : {p2.move}\n")
+
+        winner = choose_winner(p1, p2)
+        now = datetime.datetime.now()
+
+        print(f"der Gewinner ist: {winner}\n")
+
+        retry = input("nochmal? (ja / nein)")
+
+        # Spiele in played_games schreiben
+        col_played_games.insert_one({"time": now, "player_1": p1.name, "player_1_move": p1.move, "player_2": p2.name,
+                                     "player_2_move": p2.move, "Winner": winner})
+
+        if retry == "ja":
             pass
         else:
+            if searched_user == None:
+                a = "aktuelle Sitzung: Score:", p1.score, "Wins:", p1.win, "Loses:", p1.lose
+            else:
+                a = "aktuelle Sitzung: Score:", p1.score - searched_user["score"], "Wins:", p1.win - searched_user["win"], "Loses:", p1.lose - searched_user["lose"]
             break
 
-    p1.show_attributes()
-    p2.show_attributes()
+    col_users.update_one({"name": p1.name}, {"$set": {"score": p1.score, "win": p1.win, "lose": p1.lose}})
+
+    print(f"Deine Ergebnisse {p1.name}:")
+    print(a)
+    print("Gesamt: Score:", p1.score, "Wins:", p1.win, "Loses:", p1.lose)
+
+
