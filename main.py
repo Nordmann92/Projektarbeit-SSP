@@ -129,4 +129,3 @@ if __name__ == "__main__":
     print(a)
     print("Gesamt: Score:", p1.score, "Wins:", p1.win, "Loses:", p1.lose)
 
-
