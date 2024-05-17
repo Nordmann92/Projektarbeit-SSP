@@ -1,4 +1,6 @@
 from SSP_Core import *
+from SSP_Mongo import *
+
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QGridLayout, QVBoxLayout,
                              QLabel, QLineEdit, QWidget, QFormLayout, QPushButton)
@@ -43,6 +45,7 @@ class MainWindow(QMainWindow):
         self.p1_button_use_name = QPushButton("OK")
         self.p1_layout.addWidget(self.p1_button_use_name, 0, 2)
         self.p1_button_use_name.clicked.connect(self.select_name)
+        # self.p1_button_use_name.clicked.connect(check_user_name(p1))
 
         self.p1_show_stats = QLineEdit("Show stats")
         self.p1_layout.addWidget(self.p1_show_stats, 1, 1)
@@ -104,6 +107,9 @@ class MainWindow(QMainWindow):
 if __name__ == "__main__":
     p1 = Character("")
     p2 = Character("NPC")
+    # p1.name = "Norman"
+    # check_user_name(p1)
+    # print(p1.__dict__)
 
     app = QApplication([])
     window = MainWindow()

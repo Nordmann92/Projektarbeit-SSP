@@ -1,16 +1,5 @@
 import random
-from pymongo.mongo_client import MongoClient
 # random.seed(1)
-import datetime
-
-
-uriN = "mongodb+srv://Norman:t2wGUYrYIvyMu077@norman1.tnxqh8h.mongodb.net/?retryWrites=true&w=majority&appName=Norman1"
-
-client = MongoClient(uriN)
-db = client["SSP"]
-col_users = db['Users']
-col_played_games = db["played_games"]
-
 
 class Character:
     def __init__(self, name, score=0, win=0, lose=0, move=0):
