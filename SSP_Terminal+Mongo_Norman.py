@@ -1,7 +1,6 @@
-# main File
 import random
-from pymongo.mongo_client import MongoClient
 # random.seed(1)
+from pymongo.mongo_client import MongoClient
 import datetime
 
 
@@ -12,7 +11,7 @@ db = client["SSP"]
 col_users = db['Users']
 col_played_games = db["played_games"]
 
-
+# region OOP
 class Character:
     def __init__(self, name, score=0, win=0, lose=0, move=0):
 
@@ -76,7 +75,7 @@ def choose_winner(player_a, player_b) -> object:
     else:
         return "fehler"
 
-
+# endregion
 
 if __name__ == "__main__":
 
