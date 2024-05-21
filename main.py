@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
         print(f"der Gewinner ist: {winner}\n")
 
-        retry = input("nochmal? (ja / nein)")
+        retry = input("nochmal? (ja / nein): ")
 
         # Spiele in played_games schreiben
         col_played_games.insert_one({"time": now, "player_1": p1.name, "player_1_move": p1.move, "player_2": p2.name,
@@ -118,15 +118,13 @@ if __name__ == "__main__":
             pass
         else:
             if searched_user == None:
-                a = "aktuelle Sitzung: Score:", p1.score, "Wins:", p1.win, "Loses:", p1.lose
+                a = f"aktuelle Sitzung: Score: {p1.score}, Wins: {p1.win}, Loses: {p1.lose}"
             else:
-                a = "aktuelle Sitzung: Score:", p1.score - searched_user["score"], "Wins:", p1.win - searched_user["win"], "Loses:", p1.lose - searched_user["lose"]
+                a = f"aktuelle Sitzung: Score: {p1.score - searched_user["score"]}, Wins: {p1.win - searched_user["win"]}, Loses: {p1.lose - searched_user["lose"]}"
             break
 
     col_users.update_one({"name": p1.name}, {"$set": {"score": p1.score, "win": p1.win, "lose": p1.lose}})
 
     print(f"Deine Ergebnisse {p1.name}:")
     print(a)
-    print("Gesamt: Score:", p1.score, "Wins:", p1.win, "Loses:", p1.lose)
-
-
+    print(f"Gesamt: Score: {p1.score}, Wins: {p1.win}, Loses: {p1.lose}")

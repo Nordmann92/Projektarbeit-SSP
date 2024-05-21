@@ -37,7 +37,7 @@ class MainWindow(QMainWindow):
 
     def select_name(self):
         p1.name = self.ui.lineEdit_name.text()
-        print(p1.__dict__)
+        # print(p1.__dict__)
 
     def p1_paper(self):
         p1.move = "paper"
