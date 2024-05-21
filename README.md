@@ -37,14 +37,14 @@ Methoden
 
 ### AP2(**DONE**) Funktion für den Spielernamen als Klassenmethode
 
-- Textausgeben die den Spieler auffordert seinen Namen anzugeben
+- Textausgabe die den Spieler auffordert seinen Namen anzugeben
 - Objektname vergeben mit Name des Spielers
 
 
 ### AP3(**DONE**) Funktion für Auswahl des Spielzuges
 
-- Textausgeben die den Spieler auffordert seinen "move" anzugeben (schere, stein, papier)
-- entsprechendes Objektattribut des spielers anpassen
+- Textausgabe die den Spieler auffordert seinen "move" anzugeben (schere, stein, papier)
+- entsprechendes Objektattribut des Spielers anpassen
 
 
 ### AP4(**DONE**) Funktion zufälliger Move für zum Beispiel NPC 
