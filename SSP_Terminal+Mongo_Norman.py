@@ -11,7 +11,7 @@ db = client["SSP"]
 col_users = db['Users']
 col_played_games = db["played_games"]
 
-# region OOP
+# region Klasse Character
 class Character:
     def __init__(self, name, score=0, win=0, lose=0, move=0):
 

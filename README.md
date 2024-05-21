@@ -43,7 +43,7 @@ Methoden
 
 ### AP3(**DONE**) Funktion für Auswahl des Spielzuges
 
-- Text ausgeben die den Spieler auffordert seinen "move" anzugeben (schere, stein, papier)
+- Text Ausgeben die den Spieler auffordert seinen "move" anzugeben (schere, stein, papier)
 - entsprechendes Objektattribut des spielers anpassen
 
 
